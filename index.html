@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#131917">
+  <meta name="description" content="Threadmark. Scan the tag. Follow Joe Pogge's season. Own a piece of the story.">
+  <title>Joe Pogge · Threadmark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5M3 12h18M8 7v3m4-3v3m4-3v3M8 14v3m4-3v3m4-3v3"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 3h8v6a4 4 0 0 1-8 0V3Zm0 2H4v3a4 4 0 0 0 4 4m8-7h4v3a4 4 0 0 1-4 4m-4 1v6m-5 2h10m-8-2h6"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 22V3m0 0c5-4 8 4 14 0v10c-6 4-9-4-14 0"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M4 17h16l-2-3V9a6 6 0 0 0-12 0v5l-2 3Zm6 3h4"/></symbol>
+  </defs></svg>
+
+  <header class="header"><div class="header-inner">
+    <a class="brand" href="#overview" aria-label="Threadmark home"><span>THREADMARK</span></a>
+    <div class="brand-promise">A piece of the game. A story of your own.</div>
+    <div class="header-actions"><button class="btn btn-dark scan-btn" data-action="scan"><svg><use href="#i-scan"/></svg>View scanned tag</button></div>
+  </div></header>
+
+  <main><div class="scan-confirmation"><span>✓ TAG MATCHED</span><strong>JOE POGGE GOLDEN JERSEY</strong><span>1 / 1</span><span>ALREADY CLAIMED · COLLECTOR #001</span></div>
+    <section class="hero" aria-labelledby="player-name">
+      <div class="hero-background"></div><div class="hero-grain"></div>
+      <div class="hero-inner">
+        <div class="breadcrumb">THE PLAYERS <span>/</span> GOLF <span>/</span> JOE POGGE</div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="status-dot"></span> <span id="hero-year">2026 SEASON</span> <span class="eyebrow-divider">/</span> THE ONE TO WATCH</div>
+            <h1 id="player-name">JOE<br><span>POGGE</span><span class="name-period">.</span></h1>
+            <div class="player-meta"><span><svg><use href="#i-pin"/></svg>Houston, Texas</span><span class="meta-separator"></span><span>Professional golf</span></div>
+            <p class="hero-description">Big drives. Bigger moments.<br>Follow the season. Be part of the story.</p>
+            <div class="hero-buttons"><button class="btn btn-gold" data-action="follow" id="follow-button"><svg><use href="#i-bell"/></svg><span>Follow Joe</span></button><button class="text-btn hero-link" data-view="highlights">Season highlights <svg><use href="#i-arrow"/></svg></button></div>
+          </div>
+          <div class="portrait-area">
+            <div class="portrait-frame"><div class="portrait-crop"><img src="assets/joe-pogge.jpg" alt="Joe Pogge in a red polo holding a golf club"></div><span class="portrait-corner tl"></span><span class="portrait-corner br"></span><div class="portrait-footer"><span>HOUSTON'S OWN</span><strong>SMOKIN’ JOE</strong></div></div>
+            <div class="rank-stamp"><svg><use href="#i-trophy"/></svg><span>SEASON RANK</span><strong>01</strong><small>TOUR</small></div>
+            <span class="portrait-caption">THE ATHLETE BEHIND THIS JERSEY.</span>
+          </div>
+        </div>
+        <div class="hero-stats"><div><span class="stat-label">SEASON WINS</span><strong id="hero-wins">04<span><svg><use href="#i-trophy"/></svg></span></strong><small id="wins-caption">A season to remember</small></div><div><span class="stat-label">SCORING AVERAGE</span><strong id="hero-average">64.8</strong><small>Strokes per round</small></div><div><span class="stat-label">DRIVING DISTANCE</span><strong id="hero-drive">318<span>YDS</span></strong><small>Power meets precision</small></div><div><span class="stat-label">TOP 10 FINISHES</span><strong id="hero-top10">12<span>/ 18</span></strong><small id="top10-caption">Consistency, all season long</small></div></div>
+      </div>
+    </section>
+
+    <div class="tabs-wrap"><nav class="tabs" aria-label="Player sections"><div class="tab-list" role="tablist"><button class="tab active" role="tab" aria-selected="true" aria-controls="overview" id="tab-overview" data-view="overview">Overview</button><button class="tab" role="tab" aria-selected="false" aria-controls="stats" id="tab-stats" data-view="stats">Season stats</button><button class="tab" role="tab" aria-selected="false" aria-controls="highlights" id="tab-highlights" data-view="highlights">Highlights <span class="tab-count">3</span></button><button class="tab" role="tab" aria-selected="false" aria-controls="collection" id="tab-collection" data-view="collection">Jersey record <span class="gold-dot"></span></button></div><span class="tag-verified"><svg><use href="#i-check"/></svg>CONNECTED BY THREADMARK</span></nav></div>
+
+    <div class="content-shell"><div class="section-top"><div><span class="eyebrow dark-eyebrow">THE SEASON, SO FAR</span><h2 id="section-title">Every round. Every moment.</h2></div><label class="season-select"><svg><use href="#i-flag"/></svg><select id="season-select" aria-label="Select season"><option value="2026">2026 season</option><option value="2025">2025 archive</option></select></label></div>
+    <div class="layout"><div class="primary-column">
+
+      <section class="view" id="overview" role="tabpanel" aria-labelledby="tab-overview">
+        <article class="card form-card"><div class="card-header"><div><span class="eyebrow dark-eyebrow">IN THE GROOVE</span><h3>A season on another level.</h3></div><span class="positive-badge">↑ <span id="form-delta">2.4</span> strokes better</span></div><p class="card-subtitle">Scoring average across the last six events <span>· Lower is better</span></p><div class="score-chart" id="score-chart" aria-label="Event scoring averages"></div><div class="chart-legend"><span><i></i> Joe’s event average</span><span><i></i> Tour average · 71.2</span></div></article>
+        <div class="section-heading"><h3>Made for the highlight reel.</h3><button class="text-btn" data-view="highlights">See all moments <svg><use href="#i-arrow"/></svg></button></div>
+        <div class="highlights-grid" id="overview-highlights"></div>
+        <div class="section-heading results-heading"><h3>The latest from the leaderboard.</h3></div><div class="card results-card" id="overview-results"></div>
+      </section>
+
+      <section class="view" id="stats" role="tabpanel" aria-labelledby="tab-stats" hidden><article class="card stats-card"><div class="card-header"><div><span class="eyebrow dark-eyebrow">THE NUMBERS TELL THE STORY</span><h3 id="stats-heading">2026 season breakdown</h3></div><span class="pill">TOUR</span></div><div class="detailed-stats" id="detailed-stats"></div></article><div class="section-heading results-heading"><h3>Season results</h3><span class="small muted">Select an event for the scorecard</span></div><div class="card results-card" id="all-results"></div></section>
+
+      <section class="view" id="highlights" role="tabpanel" aria-labelledby="tab-highlights" hidden><div class="highlight-feature" id="highlight-feature"></div><div class="section-heading"><h3>The moments that made it.</h3><span class="small muted">Interactive highlight stories</span></div><div class="highlights-grid" id="all-highlights"></div><div class="card archive-callout"><svg><use href="#i-flag"/></svg><div><h3>The story keeps growing.</h3><p>Your apparel stays connected to every new season. Explore the archive with the season selector above.</p></div></div></section>
+
+      <section class="view" id="collection" role="tabpanel" aria-labelledby="tab-collection" hidden><article class="card item-card"><div class="card-header"><div><span class="eyebrow dark-eyebrow">ONE TAG. YOUR STORY.</span><h3>Joe Pogge’s Golden Jersey.</h3></div><span class="verified-badge"><svg><use href="#i-check"/></svg> Authenticated</span></div><div class="item-grid"><div class="polo-showcase"><img src="assets/pogge-golf-shirt.png" alt="Navy golf shirt with a sewn-in Threadmark hem tag"><span>JOE POGGE · SIGNATURE GOLF POLO</span></div><div class="item-details"><span class="eyebrow dark-eyebrow">HOUSTON COLLECTION / 2026</span><h3>One jersey.<br>One golden story.</h3><p>This one-of-one jersey connects you to Joe’s stats, highlights and career archive.</p><dl><div><dt>Item number</dt><dd>TM-JP-GOLD-0001</dd></div><div><dt>Edition</dt><dd>1 / 1</dd></div><div><dt>Status</dt><dd id="item-status">Already claimed</dd></div><div><dt>Registered owner</dt><dd id="item-owner">Collector #001</dd></div></dl><button class="btn btn-dark full" data-action="claim" id="item-claim-btn">View jersey record <svg><use href="#i-arrow"/></svg></button><button class="btn btn-outline full" data-action="transfer" id="transfer-button" hidden>Transfer ownership <svg><use href="#i-arrow"/></svg></button></div></div></article><article class="card history-card"><div class="card-header"><div><span class="eyebrow dark-eyebrow">THE RECORD TRAVELS WITH IT</span><h3>Ownership history</h3></div><svg><use href="#i-lock"/></svg></div><ol class="ownership-timeline" id="ownership-timeline"></ol></article><article class="golden-wide"><div><span class="eyebrow">ONE RARE FIND. EVERY DROP.</span><h3>Could yours be golden?</h3><p>Claim your apparel to reveal the Golden Jersey experience.</p><button class="btn btn-gold" data-action="golden">Try the Golden Jersey reveal <svg><use href="#i-star"/></svg></button></div><img src="assets/pogge-golf-shirt.png" alt="Navy golf shirt with a sewn-in Threadmark hem tag"></article></section>
+    </div>
+
+    <aside class="sidebar"><article class="connection-card"><div class="sidebar-label"><svg><use href="#i-scan"/></svg> YOUR TAG. YOUR CONNECTION.</div><div class="sidebar-polo"><img src="assets/pogge-golf-shirt.png" alt="Navy golf shirt with a sewn-in Threadmark hem tag"></div><div class="connection-body"><span class="eyebrow dark-eyebrow">GOLDEN JERSEY · 1 OF 1</span><h3>Pogge. One of one.</h3><p>Athlete: Joe Pogge<br>Already claimed · Collector #001</p><div class="edition-line"><span>TM-JP-GOLD-0001</span><span>1 / 1</span></div><button class="btn btn-dark full" data-action="claim" id="sidebar-claim-btn">View jersey record <svg><use href="#i-arrow"/></svg></button><div class="tag-note"><svg><use href="#i-lock"/></svg><span id="sidebar-claim-note">Already claimed · Ownership recorded.</span></div></div></article>
+      <button class="golden-teaser" data-action="golden"><span class="golden-star"><svg><use href="#i-star"/></svg></span><span><small>THE GOLDEN JERSEY</small><strong>Golden rewards unlocked.</strong><span>View the rewards <span aria-hidden="true">↗</span></span></span></button>
+      <div class="how-card"><span class="eyebrow dark-eyebrow">HOW THREADMARK WORKS</span><div><span>01</span><p><strong>Scan the tag.</strong> Meet the player.</p></div><div><span>02</span><p><strong>Claim your apparel.</strong> Make it yours.</p></div><div><span>03</span><p><strong>Follow the season.</strong> Keep the story.</p></div><div><span>04</span><p><strong>Pass it on.</strong> The record goes with it.</p></div></div>
+    </aside></div>
+    <div class="bottom-banner"><div><strong>The tag is just the beginning.</strong><span>Authenticated apparel. A living player story. A connection that lasts.</span></div><button class="text-btn" data-action="scan">Experience the scan <svg><use href="#i-arrow"/></svg></button></div>
+    <footer><span>THREADMARK <span class="footer-motto">Every thread tells a story.</span></span><button data-action="reset" class="reset-btn">Reset view</button></footer>
+    </div>
+  </main>
+  <dialog id="modal" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close dialog">×</button><div id="modal-content"></div></dialog><div id="toast" role="status" aria-live="polite"></div><div id="confetti" aria-hidden="true"></div>
+  <script src="app.js"></script>
+</body></html>
